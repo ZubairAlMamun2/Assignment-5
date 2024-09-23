@@ -49,5 +49,6 @@ function getDataById(donated,input,h3title){
     document.getElementById("balance").innerText=balance;
     document.getElementById(donated).innerText=donate;   
    
+    document.getElementById('my_modal').showModal()
 
 }
