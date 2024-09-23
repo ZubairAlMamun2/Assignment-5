@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faq</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                "primary": '#FFFFFF',
+                "bg-secondary":'#F9F7F3',
+                "bg-green":'#B4F461',
+                "text-primary":'#111111',
+                "text-secondary":'#111111B3',
+                "text-tertiary":'#11111166',
+                "header":'#FFFFFFF4',
+
+              },
+             
+            }
+          }
+        }
+      </script>
+</head>
+<body>
+  <header class="   sticky top-0 bg-primary">
+    <div class=" bg-bg-secondary">
+        <div class="container m-auto  flex justify-between text-xl py-7 font-semibold px-1">
+            <div class="hidden md:flex"><button id="home-page" class="py-3 px-8 bg-bg-green rounded-lg text-text-primary">Home</button></div>
+            <div class="hidden "><button id="blog-page" class="py-3 px-8 bg-bg-green rounded-lg text-text-primary">Blog</button></div>
+            <div class="flex items-center bor gap-3">
+                <div ><img src="./assets/logo.png" alt="logo"></div>
+                <h3 class="text-text-primary text-xl lg:text-3xl font-bold">Donate Bangladesh</h3>
+            </div>
+            <div class=" flex gap-3 items-center">
+                <div><img src="./assets/coin.png" alt="logo"></div>
+                <p class="text-text-secondary"><span id="balance">5500</span> BDT</p>
+            </div>
+        </div>
+    </div>
+    <div>
+      <div class="flex justify-center gap-3 mt-1 font-semibold text-xl sticky top-0">
+        <div class="flex md:hidden "><button id="home-page-small" class="py-3 px-8 bg-bg-green rounded-lg text-text-primary w-72">Home</button></div>
+        <div class="hidden"><button id="blog-page-small" class="py-3 px-8 bg-bg-green rounded-lg text-text-primary">Blog</button></div>
+    </div>
+    </div>
+    <div class="container m-auto pb-2 lg:pb-8  ">
+        <div class="flex justify-left gap-3 mt-4 lg:mt-16 font-semibold text-xl sticky top-0">
+            <h3 class="p-2 text-xl lg:text-3xl font-bold">Important FAQ</h3>
+            
+        </div>
+    </div>
+</header>
+    <main class="container m-auto">
+        <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+            <div class="collapse-content">
+              <p>The DOM is a programming interface for web documents, representing structure.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element form the DOM?</div>
+            <div class="collapse-content">
+              <p>Use methods like `getElementById`, `querySelector`, or `getElementsByClassName`.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and why useful?</div>
+            <div class="collapse-content">
+              <p>Event delegation allows handling events at a parent level, improving performance and simplifying event management.</p>
+            </div>
+          </div>
+          <div class="collapse collapse-arrow bg-base-200">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipualte an elment's attributes and styles using the DOM?</div>
+            <div class="collapse-content">
+              <p>Use `setAttribute` for attributes and `style.property` for inline styles to manipulate elements easily.</p>
+            </div>
+          </div>
+         
+    </main>
+    
+    
+    <script src="JS/faqtogole.js"></script>
+    
+</body>
+</html>

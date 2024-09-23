@@ -33,26 +33,32 @@
         }
       </script>
 </head>
-<body class="text-Lexend">
+<body class="font-Lexend">
     <header class="  sticky top-0 bg-primary">
         <div class=" bg-bg-secondary">
             <div class="container m-auto  flex justify-between text-xl py-7 font-semibold px-1">
-                <div class="hidden md:flex"><button class="py-3 px-8 bg-bg-green rounded-lg text-text-primary">Blog</button></div>
+                <div class="hidden "><button id="home-page" class="py-3 px-8 bg-bg-green rounded-lg text-text-primary">Home</button></div>
+                <div class=" hidden md:flex"><button id="blog-page" class="py-3 px-8 bg-bg-green rounded-lg text-text-primary">Blog</button></div>
                 <div class="flex items-center bor gap-3">
                     <div ><img src="./assets/logo.png" alt="logo"></div>
                     <h3 class="text-text-primary text-xl lg:text-3xl font-bold">Donate Bangladesh</h3>
                 </div>
-                <div class=" flex gap-3 items-center">
+                <div class="flex gap-3 items-center">
                     <div><img src="./assets/coin.png" alt="logo"></div>
                     <p class="text-text-secondary"><span id="balance">5500</span> BDT</p>
                 </div>
+            
             </div>
         </div>
         <div class="pb-2 lg:pb-8  ">
-            <div class="flex justify-center gap-3 mt-4 lg:mt-16 font-semibold text-xl sticky top-0">
+            
+            <div class="flex justify-center gap-2 mt-4 lg:mt-16 font-semibold text-xl sticky top-0">
                 <div><button id="donate-button" class="py-3 px-8 bg-bg-green rounded-lg text-text-primary border">Donation</button></div>
                 <div><button id="History-button" class="py-3 px-8 bg-primary rounded-lg text-text-secondary border">History</button></div>
-                
+            </div>
+            <div class="flex justify-center gap-3 mt-1 font-semibold text-xl sticky top-0 ">
+                <div class="hidden "><button id="home-page-small" class="py-3 px-8 bg-bg-green rounded-lg text-text-primary">Home</button></div>
+                <div class=" flex md:hidden "><button id="blog-page-small" class="py-3  bg-bg-green rounded-lg text-text-primary w-72">Blog</button></div>
             </div>
         </div>
     </header>
@@ -151,6 +157,7 @@
     </footer>
     <script src="./JS/index.js"></script>
     <script src="./JS/togole.js"></script>
+    <script src="JS/faqtogole.js"></script>
     
 </body>
 </html>
