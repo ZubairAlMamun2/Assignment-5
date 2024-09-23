@@ -16,13 +16,17 @@ function getDataById(donated,input,h3title){
     let donate=parseFloat(document.getElementById(donated).innerText);
     let inputValue=(document.getElementById(input).value);
     if(isNaN(inputValue)){
-        alert("Please enter a number");
+        alert("Please enter valid amount");
         return;
     }
     let value=parseFloat(inputValue);
+    if(value<=0){
+        alert("Please enter a valid amount");
+        return;
+    }
      balance -=value;
      if(balance<0){
-        alert("Your balance is not efficient to donate")
+        alert("Your balance is not efficient to donate the amount")
         return;
      }
 
