@@ -19,6 +19,10 @@ function getDataById(donated,input,h3title){
         alert("Please enter valid amount");
         return;
     }
+    else if(inputValue==""){
+        alert("Please enter valid amount");
+        return;
+    }
     let value=parseFloat(inputValue);
     if(value<=0){
         alert("Please enter a valid amount");
